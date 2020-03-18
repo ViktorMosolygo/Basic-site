@@ -5,8 +5,30 @@
   <meta name="viewport" content="width=device-width">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
         <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="query.js" media="screen" />
 <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
   <title>Basic Website</title>
 </head>
 <body>
@@ -20,14 +42,14 @@
     <header class="cover">
     <div class="wrapper">
         <div class="byline">
-        <h2>By Samuel L</h2>
-        <h3>May 13th 2017</h3>        
+        <h2>SANDRA LAKE </h2>      
         </div>
         
-        <h1 class="headline">The Lysine Contingency</h1>
-        <p class="tagline">"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men."</p>       
+        <h1 class="headline">About Travel</h1>
+        <p class="tagline"> “With age, comes wisdom. with travel, comes understanding.”</p>       
     </div>
     </header>
+    
     
         <section>
   <h1>Do you see any Teletubbies in here?</h1>
@@ -36,7 +58,16 @@
   <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic. </p>
   <p>Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
 </section>
-    
+     <div class="footer-wrapper">
+             <footer class="footer">
+      <div class="footer-nav">
+        <a onclick="topFunction()" class="myBtn" title="Go to top"> Back to Top</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+      </div>
+     <small>©2020 <strong>OUR TRIPS</strong>, All Rights Reserved</small>
+    </footer>
+    </div>    
 
 </body>
 </html>

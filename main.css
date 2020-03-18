@@ -12,6 +12,10 @@ pre,table,fieldset,hr {
 	box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
 }
@@ -23,6 +27,7 @@ nav {
     background-color: hsla(357, 0%, 11%, 1);
     padding: 1rem;
     top: 0;
+    z-index: 10;
     
     
 }
@@ -53,6 +58,10 @@ a:hover {
     border: solid 1px hsla(0,0%,100%,.2);
     border-radius: 9999px;
     
+}
+
+.myBtn {
+    cursor: pointer;
 }
 
 .sign-up:hover{
@@ -191,11 +200,47 @@ section p {
 }
 
 
+.footer-wrapper {
+  min-height: 15vh;
+  position: relative;
+  padding-bottom: 50px; /* Equals height of the footer and pushes away the content in the case they would touch. */
+}
+
+.footer {
+  background-color: hsla(357, 0%, 11%, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  color: hsla(0, 0%, 42%, 1);
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-size: .875rem;
+  text-align: center;
+ 
+}
+
+.footer-nav a {
+  text-decoration: none;
+  margin: 0 .5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+    font-size: .875rem;
+}
 
 
 
+strong {
+  font-weight: 700;
+}
 
-
+footer small {
+  color: #ccc;
+  letter-spacing: .025rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
 
 
 
